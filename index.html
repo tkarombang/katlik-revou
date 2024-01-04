@@ -14,14 +14,14 @@
       <h1>Kalkulator Online</h1>
       <div class="nav">
         <span class="min">-</span>
-        <span class="plus">+</span>
-        <span class="equals">=</span>
+        <span class="plus">=</span>
+        <span class="equals">+</span>
       </div>
     </div>
     <h3>Welcome to Katlik. Sebuah web Sederhana yang berfungsi untuk menghitung nilai luas dan
       keliling bangun datar.</h3>
   </header>
-  <section>
+  <section id="keliling-segitiga">
     <div class="img">
       <img src="for-kel-segitiga.png" alt="keliling-segitiga">
     </div>
@@ -45,6 +45,29 @@
       </form>
     </div>
   </section>
+  <section id="luas-segitiga">
+    <div class="img">
+      <img src="for-luas-segitiga.png" alt="luas-segitiga">
+    </div>
+    <div class="input">
+      <h4>Menghitung Luas Segitiga</h4>
+      <form action="#">
+        <div class="nilaiAlas">
+          <span>Nilai Alas:</span>
+          <input type="number" id="alas">
+        </div>
+        <div class="nilaiTinggi">
+          <span>Nilai Tinggi:</span>
+          <input type="number" id="tinggi">
+        </div>
+        <h3 id="result">Luas Segitiga : <span></span></h3>
+        <button type="submit">Calculate</button>
+      </form>
+    </div>
+  </section>
+  <a href="#" class="change" onclick="ubahText()">Luas Segitiga</a>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

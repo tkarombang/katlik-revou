@@ -52,7 +52,7 @@ header .nav .min {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--firstColor);
+  background-color: var(--thirdColor);
   color: var(--backgroundColor);
 }
 
@@ -61,7 +61,7 @@ header .nav .plus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondColor);
+  background-color: var(--firstColor);
   color: var(--backgroundColor);
 }
 
@@ -138,5 +138,34 @@ section .input form button {
 }
 
 section .input form button:hover {
+  background-color: var(--secondColor);
+}
+
+.change {
   background-color: var(--firstColor);
+  color: var(--backgroundColor);
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+  width: 20vw;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto 2rem;
+  transition: .2s;
+}
+
+
+.change:hover {
+  background-color: var(--secondColor);
+}
+
+section#keliling-segitiga {
+  display: flex;
+  flex-direction: column;
+}
+
+section#luas-segitiga {
+  display: none;
+  flex-direction: column;
 }
