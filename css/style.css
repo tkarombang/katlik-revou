@@ -1,0 +1,142 @@
+:root {
+  --firstColor: #20627e;
+  --thirdColor: #207e6d;
+  --secondColor: #7e203e;
+  --backgroundColor: #f0f2e6;
+  --fontColor: #1b2226;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--backgroundColor);
+  color: var(--fontColor);
+}
+
+header {
+  margin: 1rem;
+}
+
+header .nav-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .3rem;
+}
+
+header .nav-brand h1 {
+  padding: .2rem;
+  margin-right: .5rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+header .nav {
+  display: grid;
+  width: 20%;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    'minus plus'
+    'equals plus';
+}
+
+header .nav .min {
+  grid-area: minus;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--firstColor);
+  color: var(--backgroundColor);
+}
+
+header .nav .plus {
+  grid-area: plus;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondColor);
+  color: var(--backgroundColor);
+}
+
+header .nav .equals {
+  grid-area: equals;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--thirdColor);
+  color: var(--backgroundColor);
+}
+
+header h3 {
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+section .img img {
+  display: flex;
+  margin: 2px auto;
+  width: 50vw;
+}
+
+section .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+section .input form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .input h4 {
+  margin-bottom: .3rem;
+  font-weight: 600;
+}
+
+section .input form div {
+  padding: .3rem;
+  margin: .5rem;
+}
+
+section .input form div span {
+  margin-right: 1.4rem;
+}
+
+section .input form div input {
+  padding: .5rem;
+  border-radius: 4px;
+}
+
+section .input form h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}
+
+section .input form button {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--thirdColor);
+  color: var(--backgroundColor);
+  transition: .2s;
+}
+
+section .input form button:hover {
+  background-color: var(--firstColor);
+}
