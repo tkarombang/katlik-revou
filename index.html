@@ -27,21 +27,19 @@
     </div>
     <div class="input">
       <h4>Menghitung Keliling Segitiga</h4>
-      <form action="#">
+      <form action="">
         <div class="keSatu">
-          <span>Nilai Sisi Ke-1:</span>
-          <input type="number" id="sisiKe-1">
+          <input type="number" id="sisiKe-1" placeholder="Nilai sisi Ke-1">
         </div>
         <div class="keDua">
-          <span>Nilai Sisi Ke-2:</span>
-          <input type="number" id="sisiKe-2">
+          <input type="number" id="sisiKe-2" placeholder="Nilai sisi Ke-2">
         </div>
         <div class="keTiga">
-          <span>Nilai Sisi Ke-3:</span>
-          <input type="number" id="sisiKe-3">
+          <input type="number" id="sisiKe-3" placeholder="Nilai sisi Ke-3">
         </div>
-        <h3 id="result">Keliling Segitiga : <span></span></h3>
-        <button type="submit">Calculate</button>
+        <h3 id="result-keliling">Keliling Segitiga : <span class="result-kel"></span></h3>
+        <button type="submit" id="btn-keliling">Calculate Perimeter of a Triangle</button>
+        <button type="reset" id="reset">Reset</button>
       </form>
     </div>
   </section>
@@ -51,21 +49,20 @@
     </div>
     <div class="input">
       <h4>Menghitung Luas Segitiga</h4>
-      <form action="#">
+      <form action="">
         <div class="nilaiAlas">
-          <span>Nilai Alas:</span>
-          <input type="number" id="alas">
+          <input type="number" id="alas" placeholder="Nilai Alas">
         </div>
         <div class="nilaiTinggi">
-          <span>Nilai Tinggi:</span>
-          <input type="number" id="tinggi">
+          <input type="number" id="tinggi" placeholder="Nilai Tinggi">
         </div>
-        <h3 id="result">Luas Segitiga : <span></span></h3>
-        <button type="submit">Calculate</button>
+        <h3 id="result-luas">Luas Segitiga : <span class="result-l"></span></h3>
+        <button type="submit" id="btn-luas">Calculate Area of a Triangle</button>
+        <button type="reset" id="reset">Reset</button>
       </form>
     </div>
   </section>
-  <a href="#" class="change" onclick="ubahText()">Luas Segitiga</a>
+  <a href="#" class="change">Luas Segitiga</a>
 
   <script src="js/script.js"></script>
 </body>

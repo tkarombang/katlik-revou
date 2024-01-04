@@ -83,7 +83,7 @@ header h3 {
 section .img img {
   display: flex;
   margin: 2px auto;
-  width: 50vw;
+  width: 20vw;
 }
 
 section .input {
@@ -135,6 +135,15 @@ section .input form button {
   background-color: var(--thirdColor);
   color: var(--backgroundColor);
   transition: .2s;
+  margin: .1rem;
+}
+
+section .input form button#reset {
+  background-color: var(--fontColor);
+}
+
+section .input form button#reset:hover {
+  background-color: var(--secondColor);
 }
 
 section .input form button:hover {
@@ -145,10 +154,11 @@ section .input form button:hover {
   background-color: var(--firstColor);
   color: var(--backgroundColor);
   font-weight: 800;
+  font-size: .8rem;
   text-decoration: none;
   text-align: center;
   padding: 8px;
-  width: 20vw;
+  width: 40vw;
   border-radius: 3px;
   display: block;
   margin: 0 auto 2rem;
@@ -156,8 +166,8 @@ section .input form button:hover {
 }
 
 
-.change:hover {
-  background-color: var(--secondColor);
+.change:active {
+  background-color: var(--fontColor);
 }
 
 section#keliling-segitiga {
